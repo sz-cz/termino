@@ -1,0 +1,59 @@
+@import "../../SharedModule/variables.css";
+
+.list__element {
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__element:nth-child(even) {
+    background-color: var(--even-list-element);
+    border-top: 1px solid #f5f5f5;
+}
+.text__title {
+    color: #444;
+    font-weight: 600;
+}
+
+.text__belt {
+    font-size: .95em;
+    margin-top: .3em
+}
+
+.belt__subtitle {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.element__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-size);
+    width: var(--header-size);
+    color: var(--main-color);
+    background-color: var(--even-list-element);
+}
+.element__button--delete {
+    border-top: solid 2px var(--even-list-element);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-size);
+    width: var(--header-size);
+    color: var(--main-color);
+    background-color: var(--even-list-element);
+}
+
+@media only screen and (min-width: 1000px) {
+    .list__element {
+        padding-left: 2em
+    }
+
+    .element__button {
+        /* padding: 1.75em 0; */
+        height: var(--header-size);
+        width: var(--header-size);
+    }
+}

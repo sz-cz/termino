@@ -1,0 +1,74 @@
+@import "../SharedModule/variables.css";
+
+header {
+    background-color: var(--main-color);
+    position: relative;
+}
+.container {
+    height: var(--header-size);
+    display: flex;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.menu__menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-size);
+    width: var(--header-size);
+    color: white;
+    background-color: var(--menu-button-color);
+    margin-right: 2px;
+}
+
+.menu__menu-button--active {
+    background-color: var(--main-color);
+    order: 1;
+}
+
+.menu__do-done {
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
+
+.menu__menu-button:nth-child(1) {
+    margin-right: 6px;
+}
+
+.menu-button__name {
+    margin-left: .5em;
+    display: none
+}
+
+.menu__title {
+    flex-grow: 1;
+    color: white;
+    line-height: 50px;
+    padding-left: 5px;
+    font-weight: normal;
+    order: 2
+}
+
+@media only screen and (min-width: 1200px) {
+    .belt--active {
+        padding-bottom: .5em;
+    }
+
+    .menu-button__name {
+        display: block
+    }
+
+    .menu__menu-button {
+        width: 150px
+    }
+
+    .menu__menu-button--active {
+        order: 0;
+    }
+
+    .menu__title {
+        position: absolute;
+        right: 50px
+    }
+}

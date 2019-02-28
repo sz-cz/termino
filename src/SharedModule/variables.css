@@ -1,0 +1,9 @@
+:root {
+    --main-color: #990099;
+    --menu-button-color: rgba(255, 255, 255, .2);
+    --header-size: 50px;
+
+    --even-list-element: rgba(153, 0, 153, .05);
+
+    --break-point-1: 1200px;
+  }
